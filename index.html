@@ -1,50 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-  <title>Landing Page</title>
-  <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900italic,900' rel='stylesheet' type='text/css'>
-</device-width>
 
-<!-- --bg-color: #FBEC5D; -->
-<style>
-  :root {
-    --bg-color: #1F2937;
-    --color-text: #F9FAF8;
-    --sec-color-text: #E5E7EB;
-}
-  body{
-    color:var(--color-text);
-    font-family: Roboto;
-    margin:0;
-    padding-inline: 18rem;
-    background-color: var(--bg-color);
-    display: flex;
-    flex-direction: column;
-  }
-</style>
-<body>
-  <header style="display: flex; justify-content: space-between; padding-block: 1rem; align-items:center;">
-    <a style="font-size: 24px;font-weight: 900;">Header Logo</a>
-    <div style="display:flex; gap: 3rem; font-size: 18px;color: var(--sec-color-text)">
-      <a>header link one</a>
-      <a>header link two</a>
-      <a>header link three</a>
-    </div>
-  </header>
-  <div style="display: flex; padding-block: 10rem; justify-content: space-between;">
-    <div style="display: flex; flex-direction: column; justify-content: space-between">
-      <div style="font-size: 48px; font-weight: 900;">This website is awesome</div>
-      <div style="color: var(--sec-color-text);">This website has some subtext that goes here under the main title. It's smaller font and the color is lower contrast</div>
-      <button>Sign Up</button>
-    </div>
-    <img src="./background.jpg" alt="" style="height:20rem; border-radius: 20px;">
-  </div>
-    
-  <div style="background-color: white">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=main, initial-scale=1.0" />
+    <title>SantosDev - Website</title>
+    <link rel="icon" type="image/x-icon" href="./monitor.png" />
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet" />
+  </head>
 
-  </div>
-</body>
+  <body>
+    <header>
+      <img src="./images/monitor.png" alt="yellow monitor illustration" class="icon" />
+      <section class="links">
+        <a>About Me</a>
+        <a>Projects</a>
+        <a>Contact</a>
+        <a>Credits</a>
+      </section>
+      <span class="menuButton">
+        <object class="menuIcon" data="./images/bars-solid.svg" type="image/svg+xml"></object>
+      </span>
+    </header>
+    <main>
+      <section class="first">
+        <h1>Faça parte do nosso time</h1>
+        <h2>
+          Ofereça aos seus clientes a melhor experiência online com nossos sites
+          de alta qualidade.
+        </h2>
+        <button class="submit">Sign Up</button>
+        <img src="./images/background.jpg" class="img" alt="Image with yellow background and a
+      keyboard, pens, a tablet" />
+      </section>
+      <section class="services">
+        <h1>Nosso serviços</h1>
+        <article>
+          <div class="infoImgContainer">
+            <div class="imgContainer">
+              <img class="infoImg" src="./images/support.png" alt="Illustration image with a person in the computer and a terminal, gear and tools icons" />
+            </div>
+            <span>Estamos prontos para atender todas as suas demandas com a
+              expertise necessária.</span>
+          </div>
+          <div class="infoImgContainer">
+            <div class="imgContainer">
+              <img class="infoImg" src="./images/server.png" alt="Illustration image with a cloud and a server" />
+            </div>
+            <span>Possuímos todas as ferramentas necessárias para realizar a
+              publicação de sites na nuvem com eficiência.</span>
+          </div>
+          <div class="infoImgContainer">
+            <div class="imgContainer">
+              <img class="infoImg" src="./images/ux.png" alt="Illustration image monitor a few elements on teh screen" />
+            </div>
+            <span>Nosso foco é criar sites de alta qualidade, levando sempre em
+              consideração a experiência do usuário como prioridade.</span>
+          </div>
+          <div class="infoImgContainer">
+            <div class="imgContainer">
+              <img class="infoImg" src="./images/rating.png" alt="Illustration image with three person icons with a star on top." />
+            </div>
+            <span>Já conquistamos a satisfação de mais de 100 clientes.</span>
+          </div>
+        </article>
+      </section>
+      <section class="text">
+        <article>
+          <h1>
+            "A essência do design de experiência do usuário é criar produtos que
+            resolvam problemas específicos de forma agradável, útil e intuitiva
+            para o usuário."
+          </h1>
+          <h3>
+            - Don Norman, autor de "Design Emocional" e pioneiro em experiência
+            do usuário.
+          </h3>
+        </article>
+      </section>
+      <section class="action">
+        <article>
+          <h1>Está na hora! Participe do nosso time!</h1>
+          <h3>Clique ao lado!</h3>
+          <button>Sign up</button>
+        </article>
+      </section>
+    </main>
+    <footer>Copyright<a class="author" href="https://github.com/AdrianeSantosDev"> © AdrianeSantosDev </a></footer>
+    <nav>
+      <span class="closeButton">
+        <object class="closeIcon" data="./images/xmark-solid.svg"></object>
+      </span>
+      <a>About Me</a>
+      <a>Projects</a>
+      <a>Contact</a>
+      <a>Credits</a>
+    </nav>
+    <dialog>
+      <span class="closeCredits">
+        <object class="closeIcon" data="./images/xmark-solid.svg"></object>
+      </span>
+      <h1>Credits</h1>
+      <article>
+        <a href="https://www.flaticon.com/free-icons/screen" title="screen icons">
+          Monitor Icon - Smashicons - Flaticon
+        </a>
+        <a href="https://www.flaticon.com/free-icons/group" title="group icons">
+          Rating pic - Freepik - Flaticon
+        </a>
+        <a href="https://www.flaticon.com/free-icons/server" title="server icons">
+          Server Pic - RaftelDesign - Flaticon
+        </a>
+        <a href="https://www.flaticon.com/free-icons/it-department" title="it department icons">
+          Support Pic - by Paul J. - Flaticon
+        </a>
+        <a href="https://www.flaticon.com/free-icons/design" title="design icons">
+          UX Pic - Freepik - Flaticon
+        </a>
+      </article>
+    </dialog>
+    <script src="./index.js"></script>
+  </body>
+
 </html>
